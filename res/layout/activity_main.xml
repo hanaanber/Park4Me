@@ -1,0 +1,77 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity" >
+
+    <TextView
+        android:id="@+id/Log_tx_email"
+        android:layout_width="80sp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/Log_edt_email"
+        android:text="@string/email" />
+
+    <EditText
+        android:id="@+id/Log_edt_email"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/Log_tx_email"
+        android:hint="@string/enteremail"
+        android:inputType="textEmailAddress"
+        android:textSize="12sp"
+        android:textStyle="italic" />
+
+    <TextView
+        android:id="@+id/Log_tx_password"
+        android:layout_width="80sp"
+        android:layout_height="40sp"
+        android:layout_alignBaseline="@+id/Log_edt_password"
+        android:layout_below="@+id/Log_edt_email"
+        android:text="@string/password" />
+
+    <EditText
+        android:id="@+id/Log_edt_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Log_edt_email"
+        android:layout_toRightOf="@+id/Log_tx_password"
+        android:hint="@string/enterpassword"
+        android:inputType="textPassword"
+        android:textSize="12sp"
+        android:textStyle="italic" />
+
+    <Button
+        android:id="@+id/Log_btn_login"
+        android:layout_width="120sp"
+        android:layout_height="50sp"
+        android:layout_below="@+id/Log_edt_password"
+        android:layout_marginLeft="20sp"
+        android:layout_marginTop="45sp"
+        android:background="@color/Green"
+        android:text="@string/login"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/Log_btn_Register"
+        android:layout_width="120sp"
+        android:layout_height="50sp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/Log_edt_password"
+        android:layout_marginRight="20sp"
+        android:layout_marginTop="45sp"
+        android:background="@color/IndianRed"
+        android:text="@string/register"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/Log_btn_CompRegister"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/Log_btn_login"
+        android:layout_marginTop="25dp"
+        android:background="@color/Red"
+        android:text="@string/registercomp"
+        android:textStyle="bold" />
+
+</RelativeLayout>

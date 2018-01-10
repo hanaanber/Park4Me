@@ -1,0 +1,84 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/LightGrey" >
+
+    <TextView
+        android:id="@+id/CompLog_tx_long"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/CompLog_edt_long"
+        android:text="longitude"
+        android:textAlignment="gravity"
+        android:textSize="15sp" />
+
+    <EditText
+        android:id="@+id/CompLog_edt_long"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/CompLog_tx_long"
+        android:inputType="numberSigned|numberDecimal" />
+
+    <TextView
+        android:id="@+id/CompLog_tx_lat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/CompLog_edt_lat"
+        android:layout_below="@+id/CompLog_edt_long"
+        android:text="Latitude"
+        android:textSize="15sp" />
+
+    <EditText
+        android:id="@+id/CompLog_edt_lat"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/CompLog_edt_long"
+        android:layout_toRightOf="@+id/CompLog_tx_lat"
+        android:inputType="numberSigned|numberDecimal" />
+
+    <TextView
+        android:id="@+id/CompLog_tx_address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/CompLog_edt_address"
+        android:layout_below="@+id/CompLog_edt_lat"
+        android:text="address"
+        android:textSize="15sp" />
+
+    <EditText
+        android:id="@+id/CompLog_edt_address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/CompLog_edt_lat"
+        android:layout_toRightOf="@+id/CompLog_tx_address" >
+    </EditText>
+
+    <TextView
+        android:id="@+id/CompLog_tx_no"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/CompLog_edt_no"
+        android:layout_below="@+id/CompLog_edt_address"
+        android:text="user numbers"
+        android:textSize="15sp" />
+
+    <EditText
+        android:id="@+id/CompLog_edt_no"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/CompLog_edt_address"
+        android:layout_toRightOf="@+id/CompLog_tx_no"
+        android:inputType="number" >
+    </EditText>
+
+    <Button
+        android:id="@+id/CompLog_btn_Add"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/CompLog_edt_no"
+        android:layout_marginTop="40dp"
+        android:background="@color/Green"
+        android:text="Add Location"
+        android:textStyle="bold" />
+
+</RelativeLayout>

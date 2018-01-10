@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/LightGrey" >
+
+    <TextView
+        android:id="@+id/Reg_tx_usrname"
+        android:layout_width="80sp"
+        android:layout_height="wrap_content"
+        android:text="@string/username"
+        android:textAlignment="gravity"
+        android:textSize="15sp" />
+
+    <EditText
+        android:id="@+id/Reg_edt_usrname"
+        android:layout_width="fill_parent"
+        android:layout_height="35sp"
+        android:layout_toRightOf="@+id/Reg_tx_usrname"
+        android:hint="@string/enterusername"
+        android:textSize="12sp"
+        android:textStyle="italic" />
+
+    <TextView
+        android:id="@+id/Reg_tx_email"
+        android:layout_width="80sp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Reg_edt_usrname"
+        android:text="@string/email"
+        android:textSize="15sp" />
+
+    <EditText
+        android:id="@+id/Reg_edt_email"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Reg_edt_usrname"
+        android:layout_toRightOf="@+id/Reg_tx_email"
+        android:height="35sp"
+        android:hint="@string/enteremail"
+        android:inputType="textEmailAddress"
+        android:textSize="12sp"
+        android:textStyle="italic" />
+
+    <TextView
+        android:id="@+id/Reg_tx_password"
+        android:layout_width="80sp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Reg_edt_email"
+        android:text="@string/password"
+        android:textSize="15sp" />
+
+    <EditText
+        android:id="@+id/Reg_edt_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Reg_edt_email"
+        android:layout_toRightOf="@+id/Reg_tx_password"
+        android:hint="@string/enterpassword"
+        android:inputType="textPassword"
+        android:textSize="12sp"
+        android:textStyle="italic" />
+
+    <TextView
+        android:id="@+id/Reg_tx_confpass"
+        android:layout_width="80sp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Reg_edt_password"
+        android:maxLines="2"
+        android:text="@string/conf_pass"
+        android:textSize="15sp" />
+
+    <EditText
+        android:id="@+id/Reg_edt_confpass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Reg_edt_password"
+        android:layout_toRightOf="@+id/Reg_tx_confpass"
+        android:height="35sp"
+        android:hint="@string/enterconf_pass"
+        android:inputType="textPassword"
+        android:textSize="12sp"
+        android:textStyle="italic" />
+
+    <Button
+        android:id="@+id/Reg_btn_register"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Reg_edt_confpass"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50sp"
+        android:background="@color/Green"
+        android:text="@string/new_user"
+        android:textStyle="bold" />
+
+</RelativeLayout>

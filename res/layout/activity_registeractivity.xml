@@ -1,0 +1,137 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/LightGrey" >
+
+    <TextView
+        android:id="@+id/CompReg_tx_name"
+        android:layout_width="80sp"
+        android:layout_height="wrap_content"
+        android:text="Company Name"
+        android:textSize="13sp" />
+
+    <EditText
+        android:id="@+id/CompReg_edt_name"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/CompReg_tx_name"
+        android:height="35sp"
+        android:hint="@string/enterusername"
+        android:inputType="textEmailAddress"
+        android:textSize="12sp"
+        android:textStyle="italic" />
+
+    <TextView
+        android:id="@+id/CompReg_tx_email"
+        android:layout_width="80sp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/CompReg_edt_email"
+        android:layout_below="@+id/CompReg_edt_name"
+        android:text="@string/email"
+        android:textSize="15sp" />
+
+    <EditText
+        android:id="@+id/CompReg_edt_email"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/CompReg_edt_name"
+        android:layout_toRightOf="@+id/CompReg_tx_email"
+        android:height="35sp"
+        android:hint="@string/enteremail"
+        android:inputType="textEmailAddress"
+        android:textSize="12sp"
+        android:textStyle="italic" />
+
+    <TextView
+        android:id="@+id/CompReg_tx_password"
+        android:layout_width="80sp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/CompReg_edt_email"
+        android:text="@string/password"
+        android:textSize="15sp" />
+
+    <EditText
+        android:id="@+id/CompReg_edt_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/CompReg_edt_email"
+        android:layout_toRightOf="@+id/CompReg_tx_password"
+        android:height="35sp"
+        android:hint="@string/enterpassword"
+        android:inputType="textPassword"
+        android:textSize="12sp"
+        android:textStyle="italic" />
+
+    <TextView
+        android:id="@+id/CompReg_tx_confpass"
+        android:layout_width="80sp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/CompReg_edt_password"
+        android:maxLines="2"
+        android:text="@string/conf_pass"
+        android:textSize="15sp" />
+
+    <EditText
+        android:id="@+id/CompReg_edt_confpass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/CompReg_edt_password"
+        android:layout_toRightOf="@+id/CompReg_tx_confpass"
+        android:height="35sp"
+        android:hint="@string/enterconf_pass"
+        android:inputType="textPassword"
+        android:textSize="12sp"
+        android:textStyle="italic" />
+
+    <TextView
+        android:id="@+id/CompReg_txv_address"
+        android:layout_width="80sp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/CompReg_tx_confpass"
+        android:maxLines="2"
+        android:text="company address"
+        android:textSize="15sp" />
+
+    <EditText
+        android:id="@+id/CompReg_edt_address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/CompReg_tx_confpass"
+        android:layout_toRightOf="@+id/CompReg_txv_address"
+        android:height="35sp"
+        android:hint="company address"
+        android:textSize="12sp"
+        android:textStyle="italic" />
+
+    <TextView
+        android:id="@+id/CompReg_txv_feild"
+        android:layout_width="80sp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/CompReg_txv_address"
+        android:maxLines="2"
+        android:text="company feild"
+        android:textSize="15sp" />
+
+    <EditText
+        android:id="@+id/CompReg_edt_feild"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/CompReg_txv_address"
+        android:layout_toRightOf="@+id/CompReg_txv_feild"
+        android:height="35sp"
+        android:hint="company Field"
+        android:textSize="12sp"
+        android:textStyle="italic" />
+
+    <Button
+        android:id="@+id/CompReg_btn_register"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/CompReg_edt_feild"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50sp"
+        android:background="@color/Green"
+        android:text="New Company"
+        android:textStyle="bold" />
+
+</RelativeLayout>
